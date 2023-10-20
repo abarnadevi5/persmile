@@ -7,6 +7,35 @@ if(!isset($_SESSION['email'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+#form-group .error p{
+    color:#f53b57;
+}
+#form-group .error input{
+    border-color:#f53b57;
+}
+#form-group .success p{
+    color:#115933;
+}
+#form-group .success input{
+    border-color:#05c46b;
+}
+#form-group p{
+    float:left;
+    font-size: 1.5rem;
+    
+}
+#form-group{
+    margin-bottom:10px;
+}
+.error-message {
+color: red;
+}
+
+.valid-message {
+color: green;
+}
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Smile</title>
@@ -43,7 +72,7 @@ if(!isset($_SESSION['email'])){
     </header>
 <section class="home" id="home">
     <div class="image">
-    <img src="pl.png">
+    <img src="image/pl.png">
     </div>
     <div class="content">
         <h3>Perfect Smile</h3>
@@ -86,79 +115,79 @@ if(!isset($_SESSION['email'])){
 <section class="services" id="services">
     <h1 class="heading"> our <span>services</span></h1>
     <div class="box-container">
-    <div class="zoom">
-        <div class="box">
-            <img src="dent_braces.png" alt=""></i>
-            <h3>Braces Orthodontics</h3>
-            <p>Straightening smiles, one brace at a time!</p>
-            <a href="services1.php" class="btn">Learn more</a>
-        </div>
+        <div class="zoom">
+            <div class="box">
+                <img src="image/dent_braces.png" alt=""></i>
+                <h3>Braces Orthodontics</h3>
+                <p>Straightening smiles, one brace at a time!</p>
+                <a href="services1.php" class="btn">Learn more</a>
+            </div>
         </div>
 
-    <div class="zoom">
-        <div class="box">
-            <img src="kids_dentistry.png" alt=""></i>
-            <h3>Kids Dentistry</h3>
-            <p>Tiny teeth, huge potential! #HealthyStart</p>
-            <a href="services2.php" class="btn">Learn more</a>
+        <div class="zoom">
+            <div class="box">
+                <img src="image/kids_dentistry.png" alt=""></i>
+                <h3>Kids Dentistry</h3>
+                <p>Tiny teeth, huge potential! #HealthyStart</p>
+                <a href="services2.php" class="btn">Learn more</a>
+            </div>
         </div>
-    </div>
 
-    <div class="zoom">
-        <div class="box">
-            <img src="teeth_whitening.png" alt=""></i>
-            <h3>Teeth Whitening</h3>
-            <p>Brighten up your day with a sparkling smile!</p>
-            <a href="services6.php" class="btn">Learn more</a>
+        <div class="zoom">
+            <div class="box">
+                <img src="image/teeth_whitening.png" alt=""></i>
+                <h3>Teeth Whitening</h3>
+                <p>Brighten up your day with a sparkling smile!</p>
+                <a href="services6.php" class="btn">Learn more</a>
+            </div>
         </div>
-    </div>
 
-    <div class="zoom">
-        <div class="box">
-           <img src="dental_implant.png" alt=""></i>
-            <h3>Dental Implants</h3>
-            <p>Embrace the freedom of a fully restored smile with dental implants! #Freedom To Smile </p>
-            <a href="services4.php" class="btn">Learn more</a>
+        <div class="zoom">
+            <div class="box">
+                <img src="image/dental_implant.png" alt=""></i>
+                <h3>Dental Implants</h3>
+                <p>Embrace the freedom of a fully restored smile with dental implants! #Freedom To Smile </p>
+                <a href="services4.php" class="btn">Learn more</a>
+            </div>
         </div>
-    </div>
 
-    <div class="zoom">
-        <div class="box">
-            <img src="./dental_gum.png" alt=""></i>
-            <h3>Gum Therapy</h3>
-            <p>Experience the comfort of healthy gums and joy of smiling without worry #Worry Free Smiles</p>
-            <a href="services5.php" class="btn">Learn more</a>
-        </div>
+        <div class="zoom">
+            <div class="box">
+                <img src="image/dental_gum.png" alt=""></i>
+                <h3>Gum Therapy</h3>
+                <p>Experience the comfort of healthy gums and joy of smiling without worry #Worry Free Smiles</p>
+                <a href="services5.php" class="btn">Learn more</a>
+            </div>
         </div>
 
     
-    <div class="zoom">
-        <div class="box">
-            <img src="root_canal.png" alt=""></i>
-            <h3>Root Canal Therapy</h3>
-            <p>Root Canals dont't cause pain,they relieve it. Say goodbye to tooth pain, and hello to a healthier smile! #Hello Healthy Smile</p>
-            <a href="services3.php" class="btn">Learn more</a>
+        <div class="zoom">
+            <div class="box">
+                <img src="image/root_canal.png" alt=""></i>
+                <h3>Root Canal Therapy</h3>
+                <p>Root Canals dont't cause pain,they relieve it. Say goodbye to tooth pain, and hello to a healthier smile! #Hello Healthy Smile</p>
+                <a href="services3.php" class="btn">Learn more</a>
+            </div>
         </div>
-    </div>
 
-    <div class="zoom">
-        <div class="box">
-            <img src="laser_dentistry.png" alt=""></i>
-            <h3>Laser Dentistry</h3>
-            <p>Where the technology meets compassion for a more comfortable dental experience</p>
-            <a href="services7.php" class="btn">Learn more</a>
+        <div class="zoom">
+            <div class="box">
+                <img src="image/laser_dentistry.png" alt=""></i>
+                <h3>Laser Dentistry</h3>
+                <p>Where the technology meets compassion for a more comfortable dental experience</p>
+                <a href="services7.php" class="btn">Learn more</a>
+            </div>
         </div>
-    </div>
 
 
-    <div class="zoom">
-        <div class="box">
-            <img src="teeth_removal.png" alt=""></i>
-            <h3>Teeth Removal</h3>
-            <p> Trust in our gentle care when its time to part with a tooth</p>
-            <a href="services8.php" class="btn">Learn more</a>
+        <div class="zoom">
+            <div class="box">
+                <img src="image/teeth_removal.png" alt=""></i>
+                <h3>Teeth Removal</h3>
+                <p> Trust in our gentle care when its time to part with a tooth</p>
+                <a href="services8.php" class="btn">Learn more</a>
+            </div>
         </div>
-    </div>
 
 </section>
 <!--services section ends-->
@@ -168,7 +197,7 @@ if(!isset($_SESSION['email'])){
     <h1 class="heading"> <span>about</span> us </h1>
     <div class="row">
         <div class="image">
-            <img src="about_us.jpg" alt="">
+            <img src="image/about_us.jpg" alt="">
         </div>
         <div class="content">
             <h3>We take care of your healthy smile!!</h3>
@@ -185,7 +214,7 @@ if(!isset($_SESSION['email'])){
     <h1 class="heading"> our <span>doctors</span> </h1>
     <div class="box-container">
         <div class="box">
-            <img src="doctor7.jpg" alt="">
+            <img src="image/doctor7.jpg" alt="">
             <h3>Mohammed</h3>
             <span>Expert Doctors</span>
             <div class="share">
@@ -197,7 +226,7 @@ if(!isset($_SESSION['email'])){
         </div>
 
         <div class="box">
-            <img src="doctor2.jpg" alt="">
+            <img src="image/doctor2.jpg" alt="">
             <h3>Valentina</h3>
             <span>Expert Doctors</span>
             <div class="share">
@@ -209,7 +238,7 @@ if(!isset($_SESSION['email'])){
         </div>
 
         <div class="box">
-            <img src="doctor3.jpg" alt="" id="myimg">
+            <img src="image/doctor3.jpg" alt="" id="myimg">
             <h3>Mike</h3>
             <span>Expert Doctors</span>
             <div class="share">
@@ -221,7 +250,7 @@ if(!isset($_SESSION['email'])){
         </div>
 
         <div class="box">
-            <img src="doctor4.jpg" alt="">
+            <img src="image/doctor4.jpg" alt="">
             <h3>Xavier</h3>
             <span>Expert Doctors</span>
             <div class="share">
@@ -233,7 +262,7 @@ if(!isset($_SESSION['email'])){
         </div>
 
         <div class="box">
-            <img src="doctor5.jpg" alt="">
+            <img src="image/doctor5.jpg" alt="">
             <h3>Sakura</h3>
             <span>Expert Doctors</span>
             <div class="share">
@@ -245,7 +274,7 @@ if(!isset($_SESSION['email'])){
         </div>
 
         <div class="box">
-            <img src="doctor6.jpg" alt="">
+            <img src="image/doctor6.jpg" alt="">
             <h3>Sofia</h3>
             <span>Expert Doctors</span>
             <div class="share">
@@ -266,12 +295,12 @@ if(!isset($_SESSION['email'])){
             <p>Ready to schedule your next dental appointment? Look no further! Booking with us is as easy as saying 'cheese' for a smile.</p>
         </div> 
         <div class="row">
-            <form action="index.php" method="post">
-                <h3>Book Appointment</h3>
-                <input type="text" placeholder="your name" class="box">
-                <input type="number" placeholder="your number" class="box">
-                <input type="email" placeholder="your email" class="box">
-                <input type="date" class="box">
+        <form action="index.php" id="form-group" method="post">
+                <h3 class="booking">Book Appointment</h3>
+                <input type="names" id="names" placeholder="your name" class="box"><p id="name-message"></p>
+                <input type="number" id="number" placeholder="your number" class="box"><p id="id-message"></p>
+                <input type="email" id="email" placeholder="your email" class="box"><p id="e-message"></p>
+                <input type="date" id="date" class="box"><p id="date-message"></p>
                 <input type="submit" placeholder="book now" class="btn">
             </form>
         </div>
@@ -285,7 +314,7 @@ if(!isset($_SESSION['email'])){
     <div class="box-container" reveal>
 
         <div class="box">
-            <img src="client2.jpg" alt="">
+            <img src="image/client2.jpg" alt="">
             <h3>John D</h3>
             <div class="stars">
                 <ion-icon name="star"></ion-icon></i>
@@ -298,7 +327,7 @@ if(!isset($_SESSION['email'])){
         </div>
 
         <div class="box">
-            <img src="client1.jpg" alt="">
+            <img src="image/client1.jpg" alt="">
             <h3>Sarah M</h3>
             <div class="stars">
                 <ion-icon name="star"></ion-icon></i>
@@ -311,7 +340,7 @@ if(!isset($_SESSION['email'])){
         </div>
 
         <div class="box">
-            <img src="client3.jpg" alt="">
+            <img src="image/client3.jpg" alt="">
             <h3>Michael P</h3>
             <div class="stars">
                 <ion-icon name="star"></ion-icon></i>
@@ -334,7 +363,7 @@ if(!isset($_SESSION['email'])){
 
         <div class="boxs">
             <div class="image">
-                <img src="blog1.jpg" alt="">
+                <img src="image/blog1.jpg" alt="">
             </div>
             <div class="contents">
                 <div class="icons">
@@ -349,7 +378,7 @@ if(!isset($_SESSION['email'])){
 
         <div class="boxs">
             <div class="image">
-                <img src="blog2.jpg" alt="">
+                <img src="image/blog2.jpg" alt="">
             </div>
             <div class="contents">
                 <div class="icons">
@@ -364,7 +393,7 @@ if(!isset($_SESSION['email'])){
 
         <div class="boxs">
             <div class="image">
-                <img src="blog3.jpg" alt="">
+                <img src="image/blog3.jpg" alt="">
             </div>
             <div class="contents">
                 <div class="icons">
@@ -462,24 +491,10 @@ window.addEventListener('scroll', animateOnScroll);
 animateOnScroll();
 
 </script>
-<script>
-    $(function(){
-		// Scroll Event
-		$(window).on('scroll', function(){
-			var scrolled = $(window).scrollTop();
-			if (scrolled > 500) $('.go-top').addClass('active');
-			if (scrolled < 500) $('.go-top').removeClass('active');
-		});  
-		// Click Event
-		$('.go-top').on('click', function() {
-			$("html, body").animate({ scrollTop: "0" },  500);
-		});
-		
-	});
-    </script>
+
 
     
-
+<script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
